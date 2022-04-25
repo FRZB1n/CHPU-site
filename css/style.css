@@ -89,6 +89,17 @@
 * {
     box-sizing: border-box;
 }
+.sostav ul{
+    
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #ffffff;
+    list-style-type:disc
+}
+.sostav li{
+    padding-bottom: 20px;
+}
 
 /* Create four equal columns that floats next to each other */
 .column {
@@ -101,6 +112,7 @@
     margin-right: 2px;
     box-shadow: 0 8px 32px 0 rgba(206, 209, 255, 0.37);
     height: 360px;
+    
 }
 
 /* Clear floats after the columns */
@@ -108,13 +120,17 @@
     content: "";
     display: table;
     clear: both;
+    
 }
 
 @media screen and (max-width: 1805px) {
     .column {
         width: 100%;
         height: auto;
+        margin-top: 10px;
+        font-size: 12px;
     }
+
 }
 
 .textcols {
@@ -329,23 +345,7 @@ html {
 
 
 
-.contacts .gropus a {
-    background: rgba(17, 17, 17, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(206, 209, 255, 0.37);
-    backdrop-filter: blur( 7.5px );
-    -webkit-backdrop-filter: blur( 7.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    
-    line-height: 15px;
-    font-size: 15px;
-    color: white;
-    margin-top: 25px;
 
-    width: 320px;
-    text-align: center;
-
-}
 
 .contacts  a {
     background: rgba(17, 17, 17, 0.1);
@@ -358,13 +358,13 @@ html {
     line-height: 15px;
     font-size: 15px;
     color: white;
-    margin-top: 25px;
+    
 
-    width: 320px;
-    text-align: center;
+    width: auto;
+   
     text-decoration: none;
-    outline: none;
-    color: white;
+
+
     display: inline-block;
     margin: 10px 20px;
     padding: 15px 40px;
@@ -375,7 +375,7 @@ html {
     text-transform: uppercase;
     overflow: hidden;
     letter-spacing: 2px;
-    border-radius: 10px;
+
 
 }
 
@@ -520,13 +520,7 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 
-h1{
-    font-size: 2.2em;
-    text-align: center;
-    padding: 60px 40px 30px;
-    color: #3D4852;
-    line-height: 1.2;
-}
+
 p{
     line-height: 1.6;
     font-size: 1.2em;
