@@ -1,0 +1,551 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('fonts/Gilroy Semibold'), local('Gilroy-Semibold'), url('/fonts/Gilroy-Semibold.woff2') format('woff2'), url('/fonts/Gilroy-Semibold.woff') format('woff'), url('/fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        background-position: -3000px;
+    }
+    to {
+        background-position: 0px;
+    }
+}
+
+@keyframes rotate {
+    from {
+        background-position: -3000px;
+    }
+    to {
+        background-position: 0px;
+    }
+}
+
+@keyframes preloader-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes preloader-bounce {
+    0%, 100% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #141414;
+    z-index: 1001;
+}
+
+.preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #969696;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+}
+
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+
+.loaded .preloader {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 19.89%;
+    padding: 10px;
+    border: 1px #ffffff solid;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-right: 2px;
+    box-shadow: 0 8px 32px 0 rgba(206, 209, 255, 0.37);
+    height: 360px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 1805px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.textcols {
+    color: #ffffff;
+	white-space: nowrap;
+	font-size: 0;
+}
+.textcols-item {
+	white-space: normal;	
+	display: inline-block;
+	width: 15%;
+	vertical-align: top;
+	
+	margin-right: 5%;
+	font-size: 14px;
+}
+.textcols .textcols-item:last-child {
+	margin-right: 0 ;
+}
+
+
+html {
+    background-image: url(/png/chertiozh-simvoly-fon-tekst-drawing-fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Gilroy';
+    
+}
+
+.zalupa {
+
+    text-align: center;
+    transition-delay: 1000ms;
+    border-radius: 10px;
+    text-shadow: 0 0 5px rgb(110, 110, 110), 0 0 6px rgba(61, 61, 61, 0.4), 0 0 10px rgba(20, 20, 20, 0.3);
+}
+
+.zalupa  a {
+    background: rgba(17, 17, 17, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(206, 209, 255, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+   
+    line-height: 15px;
+    font-size: 15px;
+    color: white;
+    margin-top: 60px;
+    
+    width: 320px;
+  
+    text-align: center;
+}
+
+
+
+.zalupa ::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    border-radius: 10px;
+}
+
+.zalupa a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 15px 40px;
+    border: 1px solid;
+    border-color: #4e4e4e;
+    border-image-slice: 1;
+    margin: 10px 20px;
+    font-family: 'Gilroy';
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+.zalupa :hover {
+    transform: scale(1.1) rotate(1turn);
+    border-radius: 10px;
+}
+
+.zalupa a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    color: white;
+    background: #598bef;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+}
+
+.zalupa ::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    border-radius: 10px;
+}
+.products {
+
+    text-align: center;
+}
+.products .Pineapple a {
+    background: rgba(17, 17, 17, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(206, 209, 255, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    line-height: 15px;
+    font-size: 15px;
+    color: white;
+    margin-top: 60px;
+
+    width: 320px;
+    text-align: center;
+
+}
+
+.products .Pineapple img :hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.products .Pineapple img {
+    background: rgba(17, 17, 17, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(206, 209, 255, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    line-height: 15px;
+    font-size: 15px;
+    color: white;
+    margin-top: 60px;
+   
+    width: 320px;
+    text-align: center;
+
+}
+
+
+.Pineapple a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 15px 40px;
+    border: 1px solid;
+    border-color: #4e4e4e;
+    border-image-slice: 1;
+    
+    font-family: 'Gilroy';
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+
+
+.main1 {
+    transition-delay: 1000ms;
+    border-radius: 10px;
+    text-shadow: 0 0 5px rgb(110, 110, 110), 0 0 6px rgba(61, 61, 61, 0.4), 0 0 10px rgba(20, 20, 20, 0.3);
+}
+
+
+
+
+.contacts {
+
+    text-align: center;
+    transition-delay: 1000ms;
+    border-radius: 10px;
+    text-shadow: 0 0 5px rgb(110, 110, 110), 0 0 6px rgba(61, 61, 61, 0.4), 0 0 10px rgba(20, 20, 20, 0.3);
+}
+
+
+
+
+
+
+
+.contacts .gropus a {
+    background: rgba(17, 17, 17, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(206, 209, 255, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    line-height: 15px;
+    font-size: 15px;
+    color: white;
+    margin-top: 25px;
+
+    width: 320px;
+    text-align: center;
+
+}
+
+.contacts  a {
+    background: rgba(17, 17, 17, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(206, 209, 255, 0.37);
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    line-height: 15px;
+    font-size: 15px;
+    color: white;
+    margin-top: 25px;
+
+    width: 320px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 15px 40px;
+
+    border-color: #4e4e4e;
+    border-image-slice: 1;
+
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    border-radius: 10px;
+
+}
+
+
+
+
+.gropus a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 15px 40px;
+    border: 1px solid;
+    border-color: #4e4e4e;
+    border-image-slice: 1;
+    
+    font-family: 'Gilroy';
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+.admins a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 15px 40px;
+    border: 1px solid;
+    border-color: #4e4e4e;
+    border-image-slice: 1;
+    
+    font-family: 'Gilroy';
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+center{
+    color:#ffffff;
+}
+.main{
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+
+.menu{
+    color:#ffffff;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    height: 70px;
+    background-color: #22292ffb;  
+   
+    padding-top: 25px;
+}
+
+
+
+
+
+.logo-img {
+    height: 50px;
+}
+.menu-icon {
+    width: 100px;
+    height: 25px;
+    font-size: 10em;
+    color: #ffffff;
+    line-height: 50px;
+}
+nav {
+    position: absolute;
+    background-color: #3D4852;
+    top:70px;
+    left:0;
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+nav ul li {
+    padding: 0 15px;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 12px;
+
+    /* Add your custom styles below to change appearance of links */
+    color: #DAE1E7;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+nav ul li a:hover, nav ul li a:focus {
+    color: #8a8a8afa;
+}
+#checkbox {
+    display: none;
+}
+#checkbox:checked ~ nav ul {
+    max-height: 200px;
+    padding: 15px 0;
+    transition: all 0.5s;
+}
+
+@media (min-width: 768px) { 
+    .menu-icon {
+        display: none;
+    }
+    nav {
+        position: relative;
+        top: -10px;
+        background-color: transparent;
+    }
+    nav ul {
+        max-height: 70px;
+        padding: 15px 0;
+        text-align: right;
+    }
+    nav ul li {
+        display: inline-flex;
+        padding-left: 20px;
+    }
+}
+
+
+h1{
+    font-size: 2.2em;
+    text-align: center;
+    padding: 60px 40px 30px;
+    color: #3D4852;
+    line-height: 1.2;
+}
+p{
+    line-height: 1.6;
+    font-size: 1.2em;
+    padding: 0 40px;
+    text-align: center;
+    color: #3D4852;
+}
+
+
+.products .Pineapple span {
+    font-size: 15px;
+    color:#ffffff;
+    margin-left: -10%;
+}
+
+h3{
+    
+    text-align: center;
+    font-size: 10px;
+   
+   
+}
