@@ -1,0 +1,47 @@
+html{
+    background-image: url(/png/chertiozh-simvoly-fon-tekst-drawing-fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Gilroy';
+}
+
+.column h2{
+    font-size: 20px;
+}
+.column h2:hover{
+    text-shadow: none;
+}
+.column {
+    float: left;
+    width: 23.5%;
+    margin-left:1%;
+    border: 1px #ffffff solid;
+    border-radius: 5px;
+    color: #ffffff;
+    
+    
+    box-shadow: 0 8px 32px 0 rgba(206, 209, 255, 0.37);
+    height: 190px;
+   
+    
+}
+@media screen and (max-width: 1805px) {
+    .column {
+        width: 90%;
+        height: auto;
+        margin-top: 10px;
+        font-size: 12px;
+        margin-left:5%;
+
+    }
+
+}
+
+.column h3{
+    font-size: 25px;
+}

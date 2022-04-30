@@ -123,6 +123,11 @@
     
 }
 
+.column h2:hover{
+    text-shadow: #ffffff 0 0 10px;
+    
+}
+
 @media screen and (max-width: 1805px) {
     .column {
         width: 100%;
@@ -278,12 +283,14 @@ html {
 
 }
 
-.products .Pineapple img :hover {
+
+
+img :hover {
     transform: scale(1.1);
     border-radius: 10px;
 }
 
-.products .Pineapple img {
+img {
     background: rgba(17, 17, 17, 0.1);
     box-shadow: 0 8px 32px 0 rgba(206, 209, 255, 0.37);
     backdrop-filter: blur( 7.5px );
@@ -296,7 +303,7 @@ html {
     color: white;
     margin-top: 60px;
    
-    width: 320px;
+    
     text-align: center;
 
 }
