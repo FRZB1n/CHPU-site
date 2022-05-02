@@ -23,6 +23,13 @@ html{
    
     
 }
+@media screen and (max-width: 1000px) {
+    img{
+        width:70%;
+        height: 20%;
+    }
+
+}
 @media screen and (max-width: 1805px) {
     .column {
         width: 90%;
