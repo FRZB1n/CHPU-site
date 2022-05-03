@@ -111,7 +111,7 @@
     color: #ffffff;
     margin-right: 2px;
     box-shadow: 0 8px 32px 0 rgba(206, 209, 255, 0.37);
-    height: 360px;
+    height: 400px;
     
 }
 
@@ -529,6 +529,23 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 
+body,html{
+    padding: 0;
+    margin: 0;
+}
+
+#particles-js{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#page-wrapper{
+    position: relative;
+    z-index: 2;
+}
 
 p{
     line-height: 1.6;
@@ -552,3 +569,5 @@ h3{
    
    
 }
+
+
