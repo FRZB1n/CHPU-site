@@ -16,6 +16,10 @@ html{
 .column h2:hover{
     text-shadow: none;
 }
+.column h2:hover{
+    text-shadow: none;
+   
+}
 .column {
     float: left;
     width: 23.5%;

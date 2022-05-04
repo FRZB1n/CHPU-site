@@ -23,6 +23,10 @@ html{
    
     
 }
+.column h2:hover{
+    text-shadow: none;
+   
+}
 @media screen and (max-width: 1000px) {
     img{
         width:70%;
