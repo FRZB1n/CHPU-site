@@ -1,4 +1,4 @@
-<meta http-equiv='refresh' content='3; url=chpu-info.ru'>
+<meta http-equiv='refresh' content='3; url=https://chpu-info.ru'>
 <meta charset="UTF-8" />
 <?php
 
@@ -28,7 +28,7 @@
 	$send = mail ($address,$sub,$mes,"Content-type:text/plain; charset = UTF-8\r\nFrom:$email");//собственно сам вызов функции отправки сообшения на сервере
 
 	if ($send) //проверяем, отправилось ли сообщение
-		echo "Сообщение отправлено успешно! Перейти на <a href='chpu-info.ru'>chpu-info.ru</a>, если вас не перенаправило вручную.";
+	echo "Сообщение отправлено успешно! Перейти на <a href='https://chpu-info.ru/'>chpu-info.ru</a>, если вас не перенаправило вручную.";
 	else 
 		echo "Ошибка, сообщение не отправлено! Возможно, проблемы на сервере";
 		 
