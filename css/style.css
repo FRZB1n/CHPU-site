@@ -583,3 +583,10 @@ form {
     
     
 }
+@media screen and (max-width: 1250px) {
+    form{
+        margin-left: 10%;
+        width:80%;
+    }
+
+}
